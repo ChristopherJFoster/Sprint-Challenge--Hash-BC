@@ -53,7 +53,7 @@ def proof_of_work(last_proof):
         proof8 += 1
         proof9 += 1
 
-        if (time.time() - start) > (counter * 5):
+        if (time.time() - start) > (counter * 3):
             counter += 1
             r = requests.get(url=node + "/last_proof")
             data = r.json()
