@@ -26,16 +26,16 @@ def proof_of_work(last_proof):
     last_hash = hashlib.sha256(f'{last_proof}'.encode()).hexdigest()
 
     proof = None
-    proof0 = 0
-    proof1 = 3000000
-    proof2 = 6000000
-    proof3 = 9000000
-    proof4 = 12000000
-    proof5 = 15000000
-    proof6 = 18000000
-    proof7 = 21000000
-    proof8 = 24000000
-    proof9 = 27000000
+    proof0 = 10000000
+    proof1 = 20000000
+    proof2 = 30000000
+    proof3 = 40000000
+    proof4 = 50000000
+    proof5 = 60000000
+    proof6 = 70000000
+    proof7 = 80000000
+    proof8 = 90000000
+    proof9 = 100000000
 
     start = time.time()
     counter = 1
@@ -68,16 +68,16 @@ def proof_of_work(last_proof):
                 last_hash = hashlib.sha256(
                     f'{current_last_proof}'.encode()).hexdigest()
                 proof = None
-                proof0 = 0
-                proof1 = 3000000
-                proof2 = 6000000
-                proof3 = 9000000
-                proof4 = 12000000
-                proof5 = 15000000
-                proof6 = 18000000
-                proof7 = 21000000
-                proof8 = 24000000
-                proof9 = 27000000
+                proof0 = 10000000
+                proof1 = 20000000
+                proof2 = 30000000
+                proof3 = 40000000
+                proof4 = 50000000
+                proof5 = 60000000
+                proof6 = 70000000
+                proof7 = 80000000
+                proof8 = 90000000
+                proof9 = 100000000
         if counter == 14:
             print('ALERT! proof9: ', proof9)
             proof9 = 35000000
